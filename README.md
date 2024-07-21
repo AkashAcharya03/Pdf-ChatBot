@@ -50,29 +50,7 @@ PDF Chatbot is a web application that allows users to upload PDF files, ask ques
 6. **Open the application in your browser**:
     Go to `http://127.0.0.1:5000/`.
 
-## File Structure
-
-pdf-chatbot/
-│
-├── app/
-│ ├── init.py
-│ ├── routes.py
-│ ├── models.py
-│ ├── static/
-│ │ ├── style.css
-│ ├── templates/
-│ │ ├── base.html
-│ │ ├── login.html
-│ │ ├── signup.html
-│ │ ├── pdf_chatbot.html
-│
-├── .env
-├── requirements.txt
-├── README.md
-├── run.py
-
-
-### Important Files
+   ### Important Files
 
 - `app/__init__.py`: Initializes the Flask application and sets up the database.
 - `app/routes.py`: Defines the routes for the application, including user authentication and PDF processing.
@@ -92,9 +70,9 @@ pdf-chatbot/
 
 ### PDF Chatbot
 
-- Upload PDF: Users can upload a PDF file.
-- Ask Questions: Users can ask questions related to the uploaded PDF.
-- View Chat History: Users can view their chat history with the filename of the PDF.
+- **Upload PDF**: Users can upload a PDF file.
+- **Ask Questions**: Users can ask questions related to the uploaded PDF.
+- **View Chat History**: Users can view their chat history with the filename of the PDF.
 
 ## Dependencies
 
@@ -107,6 +85,7 @@ pdf-chatbot/
 Install all dependencies using the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
+```
 
 ##License
 This project is licensed under the MIT License. See the LICENSE file for details.
