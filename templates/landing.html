@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1 class="hero-title">Welcome to PDF Chatbot</h1>
+                <p class="hero-description">Your intelligent assistant for extracting information from PDFs quickly and easily.</p>
+                <div class="btn-group mt-4">
+                    <a href="{{ url_for('login') }}" class="btn btn-light btn-lg mx-2">Login</a>
+                    <a href="{{ url_for('signup') }}" class="btn btn-outline-light btn-lg mx-2">Sign Up</a>
+                </div>
+                <div class="mt-5">
+                    <h3 class="hero-subtitle">Get Started</h3>
+                    <div class="steps d-flex justify-content-center mt-4">
+                        <div class="step mx-3">
+                            <i class="fas fa-upload fa-2x mb-3"></i>
+                            <h5>Upload Your PDF</h5>
+                            <p>Drag and drop your PDF file.</p>
+                        </div>
+                        <div class="step mx-3">
+                            <i class="fas fa-question-circle fa-2x mb-3"></i>
+                            <h5>Ask Your Question</h5>
+                            <p>Type in your question related to the PDF content.</p>
+                        </div>
+                        <div class="step mx-3">
+                            <i class="fas fa-robot fa-2x mb-3"></i>
+                            <h5>Get Instant Answers</h5>
+                            <p>Receive accurate responses instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h2>About PDF Chatbot</h2>
+            <p class="lead">
+                The PDF Chatbot is an intelligent tool designed to help you quickly extract information from PDF documents. 
+                Whether you have a specific question or need to gather data, our chatbot can assist you efficiently. 
+                Simply upload your PDF, ask your question, and receive an accurate response in no time.
+            </p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <i class="fas fa-file-pdf fa-3x mb-3 text-primary"></i>
+                        <h4>Easy PDF Upload</h4>
+                        <p>Quickly upload your PDF files with ease.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                        <h4>Accurate Retrieval</h4>
+                        <p>Get precise and fast answers to your questions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h4>User-Friendly</h4>
+                        <p>Enjoy a seamless and intuitive interface.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <i class="fas fa-lock fa-3x mb-3 text-primary"></i>
+                        <h4>Secure</h4>
+                        <p>Your data is safe and private with us.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 PDF Chatbot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <script>
+                {% for category, message in messages %}
+                    alert("{{ message }}");
+                {% endfor %}
+            </script>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
