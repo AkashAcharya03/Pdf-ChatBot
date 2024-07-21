@@ -87,9 +87,6 @@ Install all dependencies using the `requirements.txt` file:
 pip install -r requirements.txt
 ```
 
-### License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ### Acknowledgments
 - Thanks to OpenAI for providing the API for generating answers.
 - Thanks to Flask for the web framework.
