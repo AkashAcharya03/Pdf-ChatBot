@@ -12,3 +12,6 @@ uploads/
 
 # Ignore Flask session data
 flask_session/
+
+# Ignore Python bytecode
+__pycache__/
