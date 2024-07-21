@@ -9,3 +9,6 @@ uploads/
 
 # Ignore environment variables file
 .env
+
+# Ignore Flask session data
+flask_session/
