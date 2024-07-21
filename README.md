@@ -74,7 +74,7 @@ PDF Chatbot is a web application that allows users to upload PDF files, ask ques
 - **Ask Questions**: Users can ask questions related to the uploaded PDF.
 - **View Chat History**: Users can view their chat history with the filename of the PDF.
 
-## Dependencies
+### Dependencies
 
 - Flask: A lightweight WSGI web application framework.
 - Flask-SQLAlchemy: Adds SQLAlchemy support to Flask applications.
@@ -87,10 +87,10 @@ Install all dependencies using the `requirements.txt` file:
 pip install -r requirements.txt
 ```
 
-##License
+### License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-##Acknowledgments
+### Acknowledgments
 - Thanks to OpenAI for providing the API for generating answers.
 - Thanks to Flask for the web framework.
 - Thanks to Bootstrap for the responsive design framework.
