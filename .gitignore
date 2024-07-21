@@ -1,1 +1,11 @@
+# Ignore virtual environment directory
+venv/
+
+# Ignore instance folder
+instance/
+
+# Ignore uploaded files
+uploads/
+
+# Ignore environment variables file
 .env
